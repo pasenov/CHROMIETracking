@@ -140,7 +140,31 @@ void DDTelescopePlanesAlgo::execute(DDCompactView& cpv) {
     // translation def
     double xpos = 0.;
     double ypos = 0.;
-    double zpos = (-(n-1.)/2. + i) * deltaZ;
+    double zpos = -1.;
+    if (i == 7) {
+    	zpos = (-20.5 - 5.0 - 13.5 - 10.2)*deltaZ/5.0;
+    }
+    if (i == 6) {
+    	zpos = (-20.5 - 5.0 - 13.5)*deltaZ/5.0;
+    }
+    if (i == 5) {
+    	zpos = (-20.5 - 5.0)*deltaZ/5.0;
+    }
+    if (i == 4) {
+    	zpos = -20.5*deltaZ/5.0;
+    }
+    if (i == 3) {
+    	zpos = 14.0*deltaZ/5.0;
+    }
+    if (i == 2) {
+    	zpos = (14.0 + 10.9)*deltaZ/5.0;
+    }
+    if (i == 1) {
+    	zpos = (14.0 + 10.9 + 12.3)*deltaZ/5.0;
+    }
+    if (i == 0) {
+    	zpos = (14.0 + 10.9 + 12.3 + 5.0)*deltaZ/5.0;
+    } //probably we should start counting from 1 instead of 0
     DDTranslation tran(xpos, ypos, zpos);
   
     // Positions child with respect to parent
