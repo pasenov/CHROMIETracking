@@ -10,7 +10,7 @@ cd CMSSW_10_1_2/src/
 
 cmsenv
 
-git clone https://github.com/jandrea/CHROMIETracking.git
+git clone https://github.com/pasenov/CHROMIETracking.git
 
 mv CHROMIETracking/* .
 
