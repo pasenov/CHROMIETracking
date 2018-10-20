@@ -21,5 +21,5 @@ scramv1 b -j4
 
 cd Geometry/PixelTelescope/test
 
-cmsRun PixelTelescope_BeamData_RECO_jeremy.py
+cmsRun PixelTelescope_BeamData_RECO.py
 
